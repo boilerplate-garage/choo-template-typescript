@@ -8,12 +8,12 @@ module.exports = {
   output: {
     path: __dirname + "/build",
     filename: '[name].js',
-    publicPath: './js/'
   },
   module: {
     rules: [
       {
         test: (/\.ts$/),
+        exclude: /node_modules/,
         use: [{
           loader: "babel-loader",
           options: {
@@ -21,12 +21,11 @@ module.exports = {
           }
         }, {
           loader: "ts-loader"
-        }],
-        exclude: /node_modules/
+        }]
       }
     ]
   },
   resolve: {
-    extensions: ['*', '.ts']
+    extensions: ['*', '.ts', '*.js']
   }
 };
