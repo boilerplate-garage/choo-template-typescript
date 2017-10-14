@@ -14,3 +14,4 @@ required:
   - _gitignore
   - _package.json
   - _editorconfig
+  - _tsconfig.json
