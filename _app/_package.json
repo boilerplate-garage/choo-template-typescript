@@ -17,6 +17,7 @@
     "choo-log": "7.2.1"
   },
   "devDependencies": {
+    "typescript": "^2.5.3",
     "bankai": "^9.0.0-rc6",
     "snazzy": "^7.0.0",
     "standard": "^10.0.0"
