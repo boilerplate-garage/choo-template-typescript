@@ -1,3 +1,5 @@
+/// <reference path="./typings/index.d.ts" />
+
 const choo = require('choo')
 const log = require('choo-log')
 const app = choo()
