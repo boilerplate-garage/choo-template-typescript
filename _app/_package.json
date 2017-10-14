@@ -4,8 +4,9 @@
   "description": "Created with choo-cli",
   "main": "client.js",
   "scripts": {
-    "start": "bankai start client.js",
+    "start": "concurrently \"npm run ts:watch\" \"bankai start client.js\"",
     "build:prod": "bankai build client.js dist/",
+    "ts:watch": "tsc --watch",
     "lint": "standard --verbose | snazzy",
     "test": "npm run lint"
   },
@@ -17,6 +18,7 @@
     "choo-log": "7.2.1"
   },
   "devDependencies": {
+    "concurrently": "^3.5.0",
     "typescript": "^2.5.3",
     "bankai": "^9.0.0-rc6",
     "snazzy": "^7.0.0",
