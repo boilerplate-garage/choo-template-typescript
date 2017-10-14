@@ -4,11 +4,11 @@ template:
   name: choo-template-typescript
 generators:
   component:
-    src: .generators/component.js
-    target: components
+    src: .generators/component.ts
+    target: src/components
   store:
-    src: ./generators/store.js
-    target: stores
+    src: ./generators/store.ts
+    target: src/stores
 required:
   - _choo.yaml
   - _gitignore

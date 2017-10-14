@@ -2,11 +2,16 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es6",
+    "outDir": "build",
+    "rootDir": "src",
+    "lib": [
+      "dom",
+      "es6"
+    ],
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "sourceMap": true,
-    "lib": ["dom", "es6"]
+    "sourceMap": true
   }
 }

@@ -4,8 +4,8 @@
   "description": "Created with choo-cli",
   "main": "client.js",
   "scripts": {
-    "start": "concurrently \"npm run ts:watch\" \"bankai start client.js\"",
-    "build:prod": "bankai build client.js dist/",
+    "start": "concurrently \"npm run ts:watch\" \"bankai start build/client.js\"",
+    "build:prod": "bankai build build/client.js dist/",
     "ts:watch": "tsc --watch",
     "lint": "standard --verbose | snazzy",
     "test": "npm run lint"
