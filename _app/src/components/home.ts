@@ -1,8 +1,8 @@
 /* Component: home */
 
-const html = require('choo/html')
+import * as html from 'choo/html'
 
-module.exports = function (state, emit) {
+module.exports = function (state: any, emit: any) {
   return html`
     <body>
       <h1>Hello, World!</h1>
@@ -13,7 +13,7 @@ module.exports = function (state, emit) {
     </body>
   `
 
-  function update (e) {
+  function update (e: any) {
     emit('name:update', e.target.value)
   }
 }

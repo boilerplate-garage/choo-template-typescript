@@ -1,8 +1,8 @@
 /* Component notFound */
 
-const html = require('choo/html')
+import * as html from 'choo/html'
 
-module.exports = function (state, emit) {
+module.exports = function (_state: any, _emit: any) {
   return html`
     <body>
       <div>Page not found</div>
