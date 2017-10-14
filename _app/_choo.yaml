@@ -1,0 +1,16 @@
+projectName: <%= projectName %>
+template:
+  url: https://github.com/boilerplace-garage/choo-template-typescript
+  name: choo-template-typescript
+generators:
+  component:
+    src: .generators/component.js
+    target: components
+  store:
+    src: ./generators/store.js
+    target: stores
+required:
+  - _choo.yaml
+  - _gitignore
+  - _package.json
+  - _editorconfig

@@ -1,0 +1,24 @@
+{
+  "name": "<%= projectName %>",
+  "version": "1.0.0",
+  "description": "Created with choo-cli",
+  "main": "client.js",
+  "scripts": {
+    "start": "bankai start client.js",
+    "build:prod": "bankai build client.js dist/",
+    "lint": "standard --verbose | snazzy",
+    "test": "npm run lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "choo": "^6.1.0",
+    "choo-log": "7.2.1"
+  },
+  "devDependencies": {
+    "bankai": "^9.0.0-rc6",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.0"
+  }
+}
