@@ -1,6 +1,6 @@
 /* Component notFound */
 
-import * as html from 'choo/html'
+import html from 'choo/html'
 
 module.exports = function (_state: any, _emit: any) {
   return html`

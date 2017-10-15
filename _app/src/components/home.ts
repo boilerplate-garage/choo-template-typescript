@@ -1,6 +1,6 @@
 /* Component: home */
 
-import * as html from 'choo/html'
+import html from 'choo/html'
 
 module.exports = function (state: any, emit: any) {
   return html`
