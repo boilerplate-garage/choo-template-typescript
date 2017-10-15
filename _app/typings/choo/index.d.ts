@@ -3,7 +3,7 @@
 import * as EventEmitter from 'events'
 
 declare module 'choo' {
-  export function choo(): any;
+  export function choo(): Choo;
 
   class Choo {
     constructor (opts: Choo.IChoo)
