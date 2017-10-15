@@ -5,8 +5,7 @@
   "main": "client.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build:prod": "webpack",
-    "ts:watch": "tsc --watch",
+    "build": "webpack",
     "lint": "standard --verbose | snazzy",
     "test": "npm run lint"
   },
