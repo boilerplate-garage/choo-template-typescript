@@ -1,7 +1,8 @@
 /// <reference path="../typings/index.d.ts" />
 
-const choo = require('choo')
-const log = require('choo-log')
+import { choo } from 'choo'
+import log from 'choo-log'
+
 const app = choo()
 
 app.use(log())
