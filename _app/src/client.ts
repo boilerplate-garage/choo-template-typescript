@@ -1,9 +1,9 @@
 /// <reference path="../typings/index.d.ts" />
 
-import * as Choo from 'choo'
+import * as choo from 'choo'
 import * as log from 'choo-log'
 
-const app = new Choo({})
+const app = new choo({})
 
 app.use(log())
 app.use(require('./stores/home'))

@@ -3,8 +3,6 @@
 import * as EventEmitter from 'events'
 
 declare module 'choo' {
-  export function choo(): Choo;
-
   class Choo {
     constructor (opts: Choo.IChoo)
     use (callback: (state: Choo.IState, emitter: EventEmitter) => void): void
