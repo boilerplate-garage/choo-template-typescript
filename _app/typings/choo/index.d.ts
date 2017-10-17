@@ -4,7 +4,7 @@ import * as EventEmitter from 'events'
 
 declare module 'choo' {
   class Choo {
-    constructor (opts: Choo.IChoo)
+    constructor (opts?: Choo.IChoo)
     use (callback: (state: Choo.IState, emitter: EventEmitter) => void): void
     route (routeName: string, handler: (state: Choo.IState, emit: (name: string, ...args: any[]) => void) => void): void
     mount (selector: string): void
