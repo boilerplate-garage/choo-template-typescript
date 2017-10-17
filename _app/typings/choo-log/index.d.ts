@@ -1,3 +1,5 @@
 declare module 'choo-log' {
-  export default function(): (state: any, emitter: any) => void;
+  function log(): (state: any, emitter: any) => void;
+  namespace log {}
+  export = log;
 }
