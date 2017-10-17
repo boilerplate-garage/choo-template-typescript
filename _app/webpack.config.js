@@ -5,10 +5,16 @@ module.exports = {
       './src/client.ts'
     ]
   },
+
   output: {
     path: __dirname + "/build",
     filename: '[name].js',
   },
+
+  devServer: {
+    contentBase: './build'
+  },
+
   module: {
     rules: [
       {
@@ -25,6 +31,7 @@ module.exports = {
       }
     ]
   },
+
   resolve: {
     extensions: ['*', '.ts', '.js']
   }
